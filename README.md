@@ -1,11 +1,7 @@
-# Simplicial Attention Neural Networks (SAN)
-
-This is the official code for the paper:
-[Simplicial Attention Neural Networks](https://arxiv.org/abs/2203.07485), *arXiv:2203.07485*, 2022.
+# Generalized Simplicial Attention Neural Networks
 
 
 ![Maps](https://github.com/lrnzgiusti/Simplicial-Attention-Networks/blob/main/assets/maps.jpg)
-![Architecture](https://github.com/lrnzgiusti/Simplicial-Attention-Networks/blob/main/assets/arch.png)
 ![Layer](https://github.com/luciatesta97/Generalized-Simplicial-Attention-Neural-Networks/blob/main/architec.png)
 
 ### Abstract 
