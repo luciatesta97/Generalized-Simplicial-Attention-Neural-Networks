@@ -6,19 +6,20 @@ This is the official code for the paper:
 
 ![Maps](https://github.com/lrnzgiusti/Simplicial-Attention-Networks/blob/main/assets/maps.jpg)
 ![Architecture](https://github.com/lrnzgiusti/Simplicial-Attention-Networks/blob/main/assets/arch.png)
+![Layer](https://github.com/luciatesta97/Generalized-Simplicial-Attention-Neural-Networks/blob/main/architec.png)
 
 ### Abstract 
 
-The aim of this work is to introduce Simplicial Attention Neural Networks (SANs), i.e., novel neural architectures that operate on data defined on simplicial complexes
-leveraging masked self-attentional layers. Hinging on formal arguments from topological signal processing, we introduce a proper self-attention mechanism able
-to process data components at different layers (e.g., nodes, edges, triangles, and so on), while learning how to weight both upper and lower neighborhoods of the given
-topological domain in a task-oriented fashion. The proposed SANs generalize most of the current architectures available for processing data defined on simplicial
-complexes. The proposed approach compares favorably with other methods when applied to different (inductive and transductive) tasks such as trajectory prediction
-and missing data imputations in citation complexes.
+The aim of this work is to introduce Generalized Simplicial Attention Neural Networks (GSANs), i.e., novel neural architectures designed to process data defined on simplicial complexes using masked self-attentional layers. Hinging on topological signal processing principles, we devise a series of self-attention schemes capable of processing data components defined at different simplicial orders, such as nodes, edges, triangles, and beyond. These schemes learn how to weight the neighborhoods of the given topological domain in a task-oriented fashion, leveraging the interplay among simplices of different orders through the Dirac operator and its Dirac decomposition. We also theoretically establish that GSANs are permutation equivariant and simplicial-aware. Finally, we illustrate how our approach compares favorably with other methods when applied to several (inductive and transductive) tasks such as trajectory prediction, missing data imputation, graph classification, and simplex prediction.
 
 ### Organization of the code
 
-The core of the layers described in the paper can be found in *layers/simplicial_attention_layer.py*. The file *test.py* runs the imputation over the citation complex with specification given as parameters to the script. Table 2 can be reproduced by executing *run.sh*.
+We can find five folders:
+-GSAN_SAN: Implementation for GSAN when it is reduced to 1 level 
+-GSAN_DIrac: Implementation for GSAN with Dirac Operator
+-GSAN Joint: GSAN Joint Implementation
+-2-simplex: GSAN for 2-simplex prediction experiment
+-3-simplex: GSAN for 3-simplex prediction experiment
 
 ### References
 
@@ -27,14 +28,5 @@ The core of the layers described in the paper can be found in *layers/simplicial
 [3] Ebli, Stefania, Michaël Defferrard, and Gard Spreemann. **Simplicial neural networks**. arXiv preprint arXiv:2010.03633 (2020). <br>
 [4] Barbarossa, Sergio, and Stefania Sardellitti. **Topological signal processing over simplicial complexes**. IEEE Transactions on Signal Processing 68 (2020): 2992-3007.
 
-### Cite
 
-If you found this useful, please consider to cite [our paper](https://arxiv.org/abs/2203.07485):
-```
-@article{giusti2022simplicial,
-  title={Simplicial Attention Networks},
-  author={Giusti, Lorenzo and Battiloro, Claudio and Di Lorenzo, Paolo and Sardellitti, Stefania and Barbarossa, Sergio},
-  journal={arXiv preprint arXiv:2203.07485},
-  year={2022}
-}
 ```
